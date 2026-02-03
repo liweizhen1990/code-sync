@@ -1,0 +1,38 @@
+############################################################################################
+# Common Code 
+############################################################################################
+#@author: liweizhen
+#@email: liweizhen1990@gmail.com
+
+_DEMO_SOURCE_: &_DEMO_SOURCE_ "git@github.com:liweizhen1990/code-sync.git"
+_DEMO_DIST_: &_DEMO_DIST_ "git@github.com:liweizhen1990/code-sync.git"
+# 主库名称
+_BRANCH_NAME_:
+  - "master"
+  - "test"
+  - "dev"
+# 代码事件
+_CODE_EVENT_: "Push Hook"
+# 访问 Token
+_ACCESS_TOKEN_: ""
+# 秘钥 Token
+_SECRET_TOKEN_: ""
+# git-ssh-url: 地址
+_REPO_SSH_URL_MASTER_:
+  - # CODE SYNC GROUP
+    - # SOURCE
+      - *_DEMO_SOURCE_
+    - # DIST
+      - *_DEMO_DIST_
+_REPO_SSH_URL_TEST_:
+  - # CODE SYNC GROUP
+    - # SOURCE
+      - *_DEMO_SOURCE_
+    - # DIST
+      - *_DEMO_DIST_
+_REPO_SSH_URL_DEV_:
+  - # CODE SYNC GROUP
+    - # SOURCE
+      - *_DEMO_SOURCE_
+    - # DIST
+      - *_DEMO_DIST_
